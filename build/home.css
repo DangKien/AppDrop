@@ -1,0 +1,104 @@
+/** @format */
+
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+body {
+  font-family: Futura, sans-serif;
+}
+
+.sidebar {
+  width: 350px;
+}
+
+.sidebar nav.menu {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #f5f5f5;
+  border: 1px;
+}
+
+.sidebar nav.menu ul li {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5rem;
+  position: relative;
+}
+
+.sidebar nav.menu ul li.active {
+  color: #4964d0;
+}
+
+.sidebar nav.menu ul li.active::before {
+  content: "";
+  width: 10px;
+  position: absolute;
+  background-image: url("./images/bull.png");
+  left: 0;
+  top: 5px;
+  height: 40px;
+}
+
+.header h1.title {
+  font-weight: 700;
+  color: #894bff;
+  font-size: 54px;
+}
+
+.header h4.description {
+  color: #808798;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-lato {
+  font-family: Lato, sans-serif;
+}
+
+.rounded-x-100 {
+  border-radius: 100px;
+}
+
+.drop-streams .heading-title {
+  color: #2d3855;
+}
+
+.drop-streams .drop-streamer .drop-avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.drop-streams .drop-stream-image {
+  max-height: 170px;
+}
+
+.drop-streams .drop-detail-streamer .drop-description-streamer {
+  color: #808798;
+}
+
+.drop-streams .drop-detail-streamer .drop-description-streamer h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.drop-streams .drop-view {
+  background-color: #000;
+}
+
+.drop-streams .drop-tags .drop-labels-item {
+  background-color: #efefef;
+}
+
+/*# sourceMappingURL=home.css.map*/
