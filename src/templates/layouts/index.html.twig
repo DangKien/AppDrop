@@ -1,0 +1,19 @@
+<!doctype html>
+<html class="h-full" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <title>{{ head_title }}</title>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+  </head>
+
+  <body {% if body_class is defined and body_class is not empty %} class="{{ body_class }}" {% endif %}>
+    {% include '../components/header.html.twig' %}
+    <div>
+      {% block page %} {% endblock %}
+    </div>
+    {% include '../components/footer.html.twig' %}
+  </body>
+
+</html>

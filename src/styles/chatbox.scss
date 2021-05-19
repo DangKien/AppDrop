@@ -1,0 +1,56 @@
+.chatbox {
+  width: 320px;
+  background-color: #f7f8fd;
+  min-height: 500px;
+  border-radius: 30px;
+  border: 1px solid #f7f8fd;
+
+  .chatbox-header {
+    @apply relative pt-6 pb-4;
+    border-color: #EBEBEB;
+
+    h4 {
+      line-height: 1.15;
+    }
+  }
+
+  .chatbox-message {
+    .message {
+      .avatar {
+        width: 32px;
+      }
+
+      .name {
+        color: #4964D0;
+      }
+    }
+
+    .chatbox-send-message {
+      @apply bg-transparent rounded-3xl p-2 mx-auto relative;
+      flex: 0 1 42px;
+      width: 90%;
+      border: 1px solid #ccc;
+
+      & .message-input {
+        @apply bg-transparent border-none outline-none m-0 pl-4 pr-5 resize-none;
+        height: 24px;
+        color: #444;
+      }
+
+      textarea:focus:-webkit-placeholder {
+        color: transparent;
+      }
+
+      & .message-submit {
+        @apply absolute z-10 top-2 right-2 bg-transparent outline-none;
+        margin-top: 2px;
+
+        &:hover {
+          background: transparent;
+          color: #333;
+        }
+      }
+    }
+
+  }
+}

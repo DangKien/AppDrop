@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+.font-24{
+  font-size:20px
+}
+
+.font-20{
+  font-size:20px
+}
+
+.font-18{
+  font-size:18px
+}
+
+.font-16{
+  font-size:16px
+}
+
+.font-14{
+  font-size:14px
+}
+
+.font-lato{
+  font-family:Lato,sans-serif
+}
+
+.rounded-x-100{
+  border-radius:100px
+}
+
+.font-primary{
+  color:#2d3855
+}
+
+.rounded-20{
+  border-radius:20px
+}
+.live-stream .info .description{
+  color:#808798
+}
+
+.live-stream .button-actions{
+  margin-top:0.5rem;
+  outline:2px solid transparent;
+  outline-offset:2px;
+  color:#808798
+}
+
+.live-stream .button-actions button{
+  display:flex;
+  margin-left:1.25rem;
+  margin-right:1.25rem
+}
+
+.live-stream .button-actions button:focus{
+  outline:2px solid transparent;
+  outline-offset:2px
+}
+
+.live-stream .button-actions button .icon{
+  margin-right:0.5rem
+}
+
+.live-stream .meta .property{
+  margin-top:1.5rem;
+  color:#808798;
+  max-width:300px
+}
+
+.live-stream .meta .property ul li{
+  margin-top:0.5rem
+}
+
+.live-stream .meta .property ul li:before{
+  margin-right:0.75rem;
+  content:"-";
+  text-indent:-5px
+}
+
+.live-stream .info-streamer .avatar{
+  text-align:center;
+  width:80px
+}
+
+.live-stream .info-streamer .avatar img{
+  width:100%
+}
+
+.live-stream .info-streamer .subscribe{
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+.live-stream .info-streamer .subscribe:focus{
+  outline:2px solid transparent;
+  outline-offset:2px
+}
+
+.live-stream .info-streamer .subscribe{
+  padding-left:1.25rem;
+  padding-right:1.25rem;
+  --tw-text-opacity:1;
+  color:rgba(255, 255, 255, var(--tw-text-opacity));
+  background-color:#4964d0;
+  height:40px
+}
+
+.live-stream .info-streamer .drop-tags .drop-labels-item{
+  background-color:#efefef
+}
+
+.products .product h4,.products .product p{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical
+}
+
+.products .product .cart{
+  width:48px;
+  height:48px;
+  background-color:#fff;
+  border-radius:10px
+}
+
+.products .product .cart:focus{
+  outline:2px solid transparent;
+  outline-offset:2px
+}
+body{
+  font-family:Futura,sans-serif
+}
+
+.sidebar{
+  width:300px
+}
+
+.sidebar nav.menu{
+  padding-top:5rem;
+  padding-bottom:5rem;
+  background-color:#f5f5f5;
+  border:1px
+}
+
+.sidebar nav.menu ul li{
+  display:flex;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  padding-left:5rem;
+  position:relative
+}
+
+.sidebar nav.menu ul li.active{
+  color:#4964d0
+}
+
+.sidebar nav.menu ul li.active::before{
+  content:"";
+  width:10px;
+  position:absolute;
+  background-image:url(bull.png);
+  left:0;
+  top:5px;
+  height:40px
+}
+.chatbox{
+  width:320px;
+  background-color:#f7f8fd;
+  min-height:500px;
+  border-radius:30px;
+  border:1px solid #f7f8fd
+}
+
+.chatbox .chatbox-header{
+  padding-bottom:1rem;
+  padding-top:1.5rem;
+  position:relative;
+  border-color:#ebebeb
+}
+
+.chatbox .chatbox-header h4{
+  line-height:1.15
+}
+
+.chatbox .chatbox-message .message .avatar{
+  width:32px
+}
+
+.chatbox .chatbox-message .message .name{
+  color:#4964d0
+}
+
+.chatbox .chatbox-message .chatbox-send-message{
+  background-color:transparent;
+  border-radius:1.5rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0.5rem;
+  position:relative;
+  flex:0 1 42px;
+  width:90%;
+  border:1px solid #ccc
+}
+
+.chatbox .chatbox-message .chatbox-send-message .message-input{
+  background-color:transparent;
+  border-style:none;
+  margin:0;
+  outline:2px solid transparent;
+  outline-offset:2px;
+  padding-left:1rem;
+  padding-right:1.25rem;
+  resize:none;
+  height:24px;
+  color:#444
+}
+
+.chatbox .chatbox-message .chatbox-send-message textarea:focus:-webkit-placeholder{
+  color:transparent
+}
+
+.chatbox .chatbox-message .chatbox-send-message .message-submit{
+  background-color:transparent;
+  outline:2px solid transparent;
+  outline-offset:2px;
+  position:absolute;
+  top:0.5rem;
+  right:0.5rem;
+  z-index:10;
+  margin-top:2px
+}
+
+.chatbox .chatbox-message .chatbox-send-message .message-submit:hover{
+  background:transparent;
+  color:#333
+}
+
+/*# sourceMappingURL=chat.css.map*/
