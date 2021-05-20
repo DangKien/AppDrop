@@ -5,7 +5,13 @@ body {
 }
 
 .sidebar {
-   width: 300px;
+  width: 300px;
+
+  .logo {
+    .drop-name {
+      color: #4964D0;
+    }
+  }
 }
 
 .sidebar nav.menu {
@@ -19,7 +25,7 @@ body {
   display: flex;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 5rem;
+  padding-left: 6rem;
   position: relative;
 }
 
