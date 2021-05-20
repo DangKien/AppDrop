@@ -183,6 +183,11 @@ body{
   line-height:1.15
 }
 
+.chatbox .chatbox-message{
+  overflow-y:scroll;
+  max-height:500px
+}
+
 .chatbox .chatbox-message .message .avatar{
   width:32px
 }
@@ -191,7 +196,7 @@ body{
   color:#4964d0
 }
 
-.chatbox .chatbox-message .chatbox-send-message{
+.chatbox .chatbox-send-message{
   background-color:transparent;
   border-radius:1.5rem;
   margin-left:auto;
@@ -203,7 +208,7 @@ body{
   border:1px solid #ccc
 }
 
-.chatbox .chatbox-message .chatbox-send-message .message-input{
+.chatbox .chatbox-send-message .message-input{
   background-color:transparent;
   border-style:none;
   margin:0;
@@ -216,11 +221,11 @@ body{
   color:#444
 }
 
-.chatbox .chatbox-message .chatbox-send-message textarea:focus:-webkit-placeholder{
+.chatbox .chatbox-send-message textarea:focus:-webkit-placeholder{
   color:transparent
 }
 
-.chatbox .chatbox-message .chatbox-send-message .message-submit{
+.chatbox .chatbox-send-message .message-submit{
   background-color:transparent;
   outline:2px solid transparent;
   outline-offset:2px;
@@ -231,7 +236,7 @@ body{
   margin-top:2px
 }
 
-.chatbox .chatbox-message .chatbox-send-message .message-submit:hover{
+.chatbox .chatbox-send-message .message-submit:hover{
   background:transparent;
   color:#333
 }

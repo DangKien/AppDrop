@@ -1,25 +1,27 @@
-<section class="chatbox">
-  <div class="chatbox-header border-b">
-    <h4 class="title-chat text-center font-18 font-lato relative">Chat
-      <button class="button absolute left-6">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-          <g id="fi-rr-download" transform="translate(16) rotate(90)">
-            <path id="Path_5725" data-name="Path 5725"
-              d="M15.333,16h0a.669.669,0,0,0-.667.671v2.685a.669.669,0,0,1-.667.671H2a.669.669,0,0,1-.667-.671V16.671A.669.669,0,0,0,.667,16h0A.669.669,0,0,0,0,16.671v2.685A2.007,2.007,0,0,0,2,21.37H14a2.007,2.007,0,0,0,2-2.014V16.671A.669.669,0,0,0,15.333,16Z"
-              transform="translate(0 -5.37)" />
-            <path id="Path_5726" data-name="Path 5726"
-              d="M.194,9.087l3.042,3.079a1.978,1.978,0,0,0,2.814,0L9.093,9.088a.677.677,0,0,0,0-.949.658.658,0,0,0-.938,0l-2.848,2.88V.671a.663.663,0,1,0-1.327,0V11.02L1.132,8.138a.658.658,0,0,0-.938,0,.677.677,0,0,0,0,.949Z"
-              transform="translate(12.644 12.754) rotate(180)" />
-          </g>
-        </svg>
+<section>
+  <div class="chatbox pb-8">
+    <div class="chatbox-header border-b">
+      <h4 class="title-chat text-center font-18 font-lato relative">Chat
+        <button class="button absolute left-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <g id="fi-rr-download" transform="translate(16) rotate(90)">
+              <path id="Path_5725" data-name="Path 5725"
+                d="M15.333,16h0a.669.669,0,0,0-.667.671v2.685a.669.669,0,0,1-.667.671H2a.669.669,0,0,1-.667-.671V16.671A.669.669,0,0,0,.667,16h0A.669.669,0,0,0,0,16.671v2.685A2.007,2.007,0,0,0,2,21.37H14a2.007,2.007,0,0,0,2-2.014V16.671A.669.669,0,0,0,15.333,16Z"
+                transform="translate(0 -5.37)" />
+              <path id="Path_5726" data-name="Path 5726"
+                d="M.194,9.087l3.042,3.079a1.978,1.978,0,0,0,2.814,0L9.093,9.088a.677.677,0,0,0,0-.949.658.658,0,0,0-.938,0l-2.848,2.88V.671a.663.663,0,1,0-1.327,0V11.02L1.132,8.138a.658.658,0,0,0-.938,0,.677.677,0,0,0,0,.949Z"
+                transform="translate(12.644 12.754) rotate(180)" />
+            </g>
+          </svg>
 
-      </button>
-    </h4>
-  </div>
-  <div class="chatbox-message px-4 py-6">
-    {% for i in 0..8 %}
-      {% include './chat-message.html.twig' %}
-    {% endfor %}
+        </button>
+      </h4>
+    </div>
+    <div class="chatbox-message px-4 py-6">
+      {% for i in 0..8 %}
+        {% include './chat-message.html.twig' %}
+      {% endfor %}
+    </div>
     <div class="chatbox-send-message font-14 mt-10 flex">
       <textarea type="text" class="message-input" placeholder="Message..."></textarea>
       <button type="submit" class="message-submit">
