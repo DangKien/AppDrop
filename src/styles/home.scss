@@ -1,3 +1,19 @@
+.header {
+  h1 {
+    &.title {
+      @apply font-bold;
+      color: #894bff;
+      font-size: 54px;
+    }
+  }
+
+  h4 {
+    &.description {
+      color: #808798;
+    }
+  }
+}
+
 .drop-streams {
   .heading-title {
     color: #2d3855;
@@ -9,12 +25,15 @@
       height: 48px;
     }
   }
+
   .drop-stream-image {
     max-height: 170px;
   }
+
   .drop-detail-streamer {
     .drop-description-streamer {
       color: #808798;
+
       h4 {
         overflow: hidden;
         text-overflow: ellipsis;

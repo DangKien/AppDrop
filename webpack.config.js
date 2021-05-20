@@ -15,6 +15,7 @@ const webpackConfig = {
   entry: {
     index: `${PATHS.src}/scripts/index.js`,
     chat: `${PATHS.src}/scripts/chat.js`,
+    home: `${PATHS.src}/scripts/home.js`,
   },
   output: {
     path: PATHS.build,
@@ -25,7 +26,7 @@ const webpackConfig = {
     new HtmlWebPackPlugin({
       template: `${PATHS.html}/home.html.twig`,
       filename: "index.html",
-      chunks: ["index"],
+      chunks: ["index", "home"],
       title: "Homepage",
     }),
 

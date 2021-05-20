@@ -34,6 +34,14 @@
 .rounded-20{
   border-radius:20px
 }
+
+.font-26{
+  font-size:26px
+}
+
+.content{
+  flex:1 1 0%
+}
 .live-stream .info .description{
   color:#808798
 }
@@ -136,6 +144,10 @@ body{
   width:300px
 }
 
+.sidebar .logo .drop-name{
+  color:#4964d0
+}
+
 .sidebar nav.menu{
   padding-top:5rem;
   padding-bottom:5rem;
@@ -147,7 +159,7 @@ body{
   display:flex;
   padding-top:1rem;
   padding-bottom:1rem;
-  padding-left:5rem;
+  padding-left:5.5rem;
   position:relative
 }
 
