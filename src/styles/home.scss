@@ -1,0 +1,37 @@
+.drop-streams {
+  .heading-title {
+    color: #2d3855;
+  }
+
+  .drop-streamer {
+    .drop-avatar {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .drop-stream-image {
+    max-height: 170px;
+  }
+  .drop-detail-streamer {
+    .drop-description-streamer {
+      color: #808798;
+      h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  .drop-view {
+    background-color: #000000;
+  }
+
+  .drop-tags {
+    .drop-labels-item {
+      background-color: #efefef;
+    }
+  }
+}
