@@ -39,5 +39,18 @@
 }
 
 .content {
-  @apply flex-1 ;
+  @apply flex-1;
+}
+
+
+.notification {
+  #number {
+    display: none;
+  }
+
+  .active {
+    #number {
+      display: block;
+    }
+  }
 }

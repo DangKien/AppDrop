@@ -1,0 +1,74 @@
+{% extends '../layouts/index.html.twig' %}
+{% block page %}
+  <div class="flex felx-row mt-10 mx-12">
+    <div class="w-1/4">
+      {% include '../components/sidebar.html.twig' %}
+    </div>
+
+    <div class="content w-3/4 ml-12">
+      <div class="header relative">
+        <h1 class="title"> Live </h1>
+        <h4 class="description font-18 font-lato"> You can choose the most popular streamers selling accessories </h4>
+        <div class="actions flex absolute top-2 right-2">
+          <div class="setting">
+            <span>
+              <svg id="Filter" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <g id="Group_39" data-name="Group 39" transform="translate(-65 -572)">
+                  <path id="Path_24" data-name="Path 24" d="M1,4.75H3.736a3.728,3.728,0,0,0,7.2,0H23a1,1,0,0,0,0-2H10.931a3.728,3.728,0,0,0-7.195,0H1a1,1,0,0,0,0,2ZM7.333,2a1.75,1.75,0,1,1-1.75,1.75A1.75,1.75,0,0,1,7.333,2Z" transform="translate(77 584)" fill="#808798"/>
+                  <path id="Path_25" data-name="Path 25" d="M23,11H20.264a3.727,3.727,0,0,0-7.194,0H1a1,1,0,0,0,0,2H13.07a3.727,3.727,0,0,0,7.194,0H23a1,1,0,0,0,0-2Zm-6.333,2.75A1.75,1.75,0,1,1,18.417,12a1.75,1.75,0,0,1-1.75,1.75Z" transform="translate(77 584)" fill="#808798"/>
+                  <path id="Path_26" data-name="Path 26" d="M23,19.25H10.931a3.728,3.728,0,0,0-7.195,0H1a1,1,0,0,0,0,2H3.736a3.728,3.728,0,0,0,7.2,0H23a1,1,0,0,0,0-2ZM7.333,22a1.75,1.75,0,1,1,1.75-1.75A1.75,1.75,0,0,1,7.333,22Z" transform="translate(77 584)" fill="#808798"/>
+                </g>
+              </svg>
+            </span>
+          </div>
+          <div class="notification">
+            <span class="active">
+              <svg id="Notifications" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <g id="Notifications-2" data-name="Notifications">
+                  <g id="Group_2015" data-name="Group 2015" transform="translate(12 12)">
+                    <path id="Path_5653" data-name="Path 5653" d="M13.5,4.18a.5.5,0,0,1-.5-.5V2a1,1,0,0,0-2,0V3.68a.5.5,0,0,1-1,0V2a2,2,0,0,1,4,0V3.68A.5.5,0,0,1,13.5,4.18Z" fill="none" stroke="#808798" stroke-width="1"/>
+                  </g>
+                  <g id="Group_2016" data-name="Group 2016" transform="translate(12 12)">
+                    <path id="Path_5654" data-name="Path 5654" d="M12,24a3.5,3.5,0,0,1-3.5-3.5.5.5,0,0,1,1,0,2.5,2.5,0,0,0,5,0,.5.5,0,0,1,1,0A3.5,3.5,0,0,1,12,24Z" fill="none" stroke="#808798" stroke-width="1"/>
+                  </g>
+                  <g id="Group_2017" data-name="Group 2017" transform="translate(12 12)">
+                    <path id="Path_5655" data-name="Path 5655" d="M20.5,21H3.5a1.5,1.5,0,0,1-.975-2.64A6.952,6.952,0,0,0,5,13.038V10a7,7,0,0,1,14,0v3.038a6.945,6.945,0,0,0,2.467,5.315A1.5,1.5,0,0,1,20.5,21ZM12,4a6.006,6.006,0,0,0-6,6v3.038a7.944,7.944,0,0,1-2.821,6.079A.5.5,0,0,0,3.5,20h17a.5.5,0,0,0,.325-.88A7.951,7.951,0,0,1,18,13.038V10a6.006,6.006,0,0,0-6-6Z" fill="none" stroke="#808798" stroke-width="1"/>
+                  </g>
+                </g>
+                <g id="number" transform="translate(-315 -172)">
+                  <rect id="Rectangle_90" data-name="Rectangle 90" width="10" height="10" rx="5" transform="translate(339 184)" fill="#ff0606"/>
+                  <text id="_" data-name="!" transform="translate(344 192)" fill="#eafffc" font-size="8" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-1.309" y="0">!</tspan></text>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="categories-stream mt-16">
+        <div class="swiper-container slider-categories">
+          <div class="swiper-wrapper grid grid-flow-col grid-cols-5 gap-3">
+              {% for i in 0..4 %}
+                {% include '../components/category.html.twig' %}
+              {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="drop-streams mt-16">
+        <h2 class="heading-title font-18 font-lato"> Recomended</h2>
+        <div class="swiper-container slider-streams">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide drop-stream">
+              <div class="mt-4 grid grid-flow-col grid-cols-5 gap-2">
+                {% for i in 0..4 %}
+                {% include '../components/stream.html.twig' %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
