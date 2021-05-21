@@ -1,7 +1,10 @@
+/** @format */
+
 // Dependencies
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackInjector = require("html-webpack-injector");
 const sass = require("sass");
 
 const PATHS = {
@@ -24,6 +27,7 @@ const webpackConfig = {
   },
   plugins: [
     new MiniCssExtractPlugin(),
+    new HtmlWebpackInjector(),
     new HtmlWebPackPlugin({
       template: `${PATHS.html}/home.html.twig`,
       filename: "index.html",

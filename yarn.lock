@@ -2293,6 +2293,11 @@ html-tags@^3.1.0:
   resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-3.1.0.tgz#7b5e6f7e665e9fb41f30007ed9e0d41e97fb2140"
   integrity sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg==
 
+html-webpack-injector@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/html-webpack-injector/-/html-webpack-injector-1.1.4.tgz#eee4d11fc14d959b4bddd388b60ecb11e94045ca"
+  integrity sha512-R+HeAYzPeL3dKIr5/a7a2S6R4fy2yHetKiB7cz5rXjwlnU5tghuy58kCBsKA/Qoj94MAgCYwllHmvYqy2nJSdg==
+
 html-webpack-plugin@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-5.3.1.tgz#8797327548e3de438e3494e0c6d06f181a7f20d1"

@@ -40,7 +40,15 @@
 }
 
 .content{
-  flex:1 1 0%
+  overflow:hidden
+}
+
+.notification #number{
+  display:none
+}
+
+.notification .active #number{
+  display:block
 }
 .live-stream .info .description{
   color:#808798

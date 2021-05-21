@@ -1,3 +1,5 @@
+/** @format */
+
 .header {
   h1 {
     &.title {
@@ -17,6 +19,9 @@
 .drop-streams {
   .heading-title {
     color: #2d3855;
+  }
+  .slider-streams {
+    @apply w-full;
   }
 
   .drop-streamer {

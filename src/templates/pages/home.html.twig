@@ -1,21 +1,22 @@
 {% extends '../layouts/index.html.twig' %}
 {% block page %}
-  <div class="flex felx-row mt-10 mx-12">
-    <div class="w-1/4">
-      {% include '../components/sidebar.html.twig' %}
-    </div>
 
-    <div class="content w-3/4 ml-12">
-      <div class="header">
-        <h1 class="title"> Fashion Week </h1>
-        <h4 class="description font-18 font-lato"> Find the best deals today! </h4>
-      </div>
-      <div class="drop-streams mt-16">
-        <h2 class="heading-title font-18 font-lato"> Recomended</h2>
-        <div class="swiper-container slider-streams">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide drop-stream">
-              <div class="mt-4 grid grid-flow-col grid-cols-5 gap-2">
+<div class="m-12">
+  <div class="w-full">
+    <div class="flex flex-row space-x-12">
+
+      {% include '../components/sidebar.html.twig' %}
+
+      <div class="content w-3/4 flex-1">
+        <div class="header">
+          <h1 class="title"> Fashion Week </h1>
+          <h4 class="description font-18 font-lato"> Find the best deals today! </h4>
+        </div>
+        <div class="drop-streams mt-16">
+          <div class="swiper-container slider-streams">
+            <h2 class="heading-title font-18 font-lato">Recomended</h2>
+            <div class="swiper-container w-full">
+              <div class="swiper-wrapper">
                 {% for i in 0..4 %}
                 {% include '../components/stream.html.twig' %}
                 {% endfor %}
@@ -23,7 +24,7 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
+</div>
 {% endblock %}

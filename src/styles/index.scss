@@ -1,3 +1,5 @@
+/** @format */
+
 .font-24 {
   font-size: 20px;
 }
@@ -27,7 +29,7 @@
 }
 
 .font-primary {
-  color: #2D3855
+  color: #2d3855;
 }
 
 .rounded-20 {
@@ -39,9 +41,8 @@
 }
 
 .content {
-  @apply flex-1;
+  @apply overflow-hidden;
 }
-
 
 .notification {
   #number {
