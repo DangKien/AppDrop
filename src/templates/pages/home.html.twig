@@ -4,26 +4,25 @@
 <div class="m-12">
   <div class="w-full">
     <div class="flex flex-row space-x-12">
-
       {% include '../components/sidebar.html.twig' %}
-
       <div class="content w-3/4 flex-1">
         <div class="header">
           <h1 class="title"> Fashion Week </h1>
           <h4 class="description font-18 font-lato"> Find the best deals today! </h4>
         </div>
         <div class="drop-streams mt-16">
-          <div class="swiper-container slider-streams">
+          <div class="streams">
             <h2 class="heading-title font-18 font-lato">Recomended</h2>
-            <div class="swiper-container w-full">
+            <div class="slider-streams swiper-container w-full">
               <div class="swiper-wrapper">
                 {% for i in 0..4 %}
-                {% include '../components/stream.html.twig' %}
+                  {% include '../components/stream.html.twig' %}
                 {% endfor %}
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
 </div>

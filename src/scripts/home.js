@@ -9,7 +9,7 @@ import "swiper/swiper-bundle.css";
 
 document.onreadystatechange = () => {
   if (document.readyState === "complete") {
-    new Swiper(".swiper-container", {
+    new Swiper(".slider-streams", {
       loop: true,
       slidesPerView: 5,
       spaceBetween: 16,
