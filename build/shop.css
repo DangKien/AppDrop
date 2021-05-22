@@ -103,5 +103,21 @@ body{
 .drop-streams .drop-tags .drop-labels-item{
   background-color:#efefef
 }
+.categories .icon-category svg{
+  width:24px;
+  height:24px
+}
 
-/*# sourceMappingURL=home.css.map*/
+.drop-products .products .product .product-image{
+  border-color:#4964d0
+}
+
+.drop-products .products .product .new-price{
+  color:#4964d0
+}
+
+.drop-products .paginate .paginate-item.active{
+  color:#4964d0
+}
+
+/*# sourceMappingURL=shop.css.map*/

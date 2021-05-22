@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+body{
+  color:#2d3855
+}
+
 .font-24{
   font-size:20px
 }
@@ -33,6 +37,10 @@
 
 .rounded-20{
   border-radius:20px
+}
+
+.rounded-10{
+  border-radius:10px
 }
 
 .font-26{

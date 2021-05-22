@@ -20,6 +20,7 @@ const webpackConfig = {
     chat: `${PATHS.src}/scripts/chat.js`,
     home: `${PATHS.src}/scripts/home.js`,
     live: `${PATHS.src}/scripts/live.js`,
+    shop: `${PATHS.src}/scripts/shop.js`,
   },
   output: {
     path: PATHS.build,
@@ -47,6 +48,13 @@ const webpackConfig = {
       filename: "live.html",
       chunks: ["index", "live"],
       title: "Live streams",
+    }),
+
+    new HtmlWebPackPlugin({
+      template: `${PATHS.html}/shop.html.twig`,
+      filename: "shop.html",
+      chunks: ["index", "shop"],
+      title: "Shop",
     }),
   ],
   optimization: {
