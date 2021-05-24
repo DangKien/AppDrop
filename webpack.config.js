@@ -21,6 +21,7 @@ const webpackConfig = {
     home: `${PATHS.src}/scripts/home.js`,
     live: `${PATHS.src}/scripts/live.js`,
     shop: `${PATHS.src}/scripts/shop.js`,
+    product: `${PATHS.src}/scripts/product.js`,
   },
   output: {
     path: PATHS.build,
@@ -55,6 +56,13 @@ const webpackConfig = {
       filename: "shop.html",
       chunks: ["index", "shop"],
       title: "Shop",
+    }),
+
+    new HtmlWebPackPlugin({
+      template: `${PATHS.html}/product-detail.html.twig`,
+      filename: "product-detail.html",
+      chunks: ["index", "product", "home"],
+      title: "Detail Product",
     }),
   ],
   optimization: {

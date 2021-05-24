@@ -1,0 +1,39 @@
+.drop-product {
+  .border-product {
+    @apply border-b pb-6;
+    border-color: #DEDEDE
+  }
+
+  .quality {
+    button {
+      @apply focus:outline-none;
+
+      &.icon-action {
+        border-color: #2D3855;
+        color: #2D3855
+      }
+    }
+
+    input {
+      @apply text-white;
+      background-color: #4964D0;
+      width: 58px;
+
+    }
+  }
+}
+
+.optional {
+  @apply border;
+  color: #4964D0;
+  border-color: #4964D0;
+  border-radius: 10px;
+
+  label {
+    @apply px-3;
+  }
+
+  input {
+    @apply opacity-0;
+  }
+}

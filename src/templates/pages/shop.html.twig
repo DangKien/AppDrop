@@ -463,40 +463,11 @@
                   Popular products
                 </h2>
               </div>
-              <div class="products mt-8 grid grid-cols-5 gap-4">
-                <div class="product">
-                  <div class="product-image border rounded-20 overflow-hidden">
-                    <div
-                      class="img-product"
-                      style="
-                        background-image: url('../../../src/images/product_0.png');
-                        height: 280px;
-                        background-size: cover;
-                        background-position: center;
-                      "
-                    ></div>
-                  </div>
-                  <div class="font-lato">
-                    <a class="font-18" href="/">Solidus Long Sleeve</a>
-                    <p>
-                      <span class="new-price font-24">$19.99</span>
-                    </p>
-                  </div>
-                </div>
+              <div class="products mt-8 grid grid-flow-row grid-cols-5 gap-4">
+                {% for i in 0..19 %} {% include
+                '../components/product-card.html.twig' %} {% endfor %}
               </div>
-              <div class="flex justify-end items-center flex-wrap paginate">
-                <div
-                  class="flex flex-wrap py-2 mr-3 space-x-2 font-18 font-lato"
-                >
-                  <a href="#" class="paginate-item"> prev </a>
-                  <a href="#" class="paginate-item">...</a>
-                  <a href="#" class="paginate-item">23</a>
-                  <a href="#" class="active paginate-item">24</a>
-                  <a href="#" class="paginate-item">28</a>
-                  <a href="#" class="paginate-item">...</a>
-                  <a href="#" class="paginate-item"> next </a>
-                </div>
-              </div>
+              {% include '../components/paginate.html.twig' %}
             </div>
           </div>
         </div>

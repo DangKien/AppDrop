@@ -48,6 +48,10 @@ body {
   font-size: 26px;
 }
 
+.font-32 {
+  font-size: 32px;
+}
+
 .content {
   @apply overflow-hidden;
 }
@@ -62,4 +66,8 @@ body {
       display: block;
     }
   }
+}
+
+.text-description {
+  color: #808798;
 }
