@@ -1,0 +1,136 @@
+.header h1.title{
+  font-weight:700;
+  color:#894bff;
+  font-size:54px
+}
+
+.header h4.description{
+  color:#808798
+}
+
+.drop-streams .heading-title{
+  color:#2d3855
+}
+
+.drop-streams .slider-streams{
+  width:100%
+}
+
+.drop-streams .drop-streamer .drop-avatar{
+  width:48px;
+  height:48px
+}
+
+.drop-streams .drop-stream-image{
+  max-height:170px
+}
+
+.drop-streams .drop-detail-streamer .drop-description-streamer{
+  color:#808798
+}
+
+.drop-streams .drop-detail-streamer .drop-description-streamer h4{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical
+}
+
+.drop-streams .drop-view{
+  background-color:#000
+}
+
+.drop-streams .drop-tags .drop-labels-item{
+  background-color:#efefef
+}
+.drop-product .border-product{
+  border-bottom-width:1px;
+  padding-bottom:1.5rem;
+  border-color:#dedede
+}
+
+.drop-product .product{
+  border-bottom-width:1px;
+  padding-bottom:4rem
+}
+
+.drop-product .product .sale{
+  padding:0.5rem;
+  position:absolute;
+  top:0.5rem;
+  right:0.5rem;
+  z-index:10;
+  background-color:#4964d0
+}
+
+.drop-product .quality button:focus{
+  outline:2px solid transparent;
+  outline-offset:2px
+}
+
+.drop-product .quality button.icon-action{
+  border-color:#2d3855;
+  color:#2d3855
+}
+
+.drop-product .quality input{
+  --tw-text-opacity:1;
+  color:rgba(255, 255, 255, var(--tw-text-opacity));
+  background-color:#4964d0;
+  width:58px
+}
+
+.drop-product .quality input[type=number]{
+  -moz-appearance:textfield
+}
+
+.drop-product .quality input::-webkit-outer-spin-button,.drop-product .quality input::-webkit-inner-spin-button{
+  -webkit-appearance:none
+}
+
+.optional{
+  border-width:1px;
+  padding-left:0.75rem;
+  padding-right:0.75rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  color:#4964d0;
+  border-color:#4964d0;
+  border-radius:15px
+}
+
+.optional.optional-checked{
+  color:#fff;
+  background-color:#4964d0
+}
+
+.optional label{
+  padding-left:0.75rem;
+  padding-right:0.75rem;
+  padding-top:1rem;
+  padding-bottom:1rem
+}
+
+.optional input{
+  display:none
+}
+
+.add-to-cart{
+  margin-top:1.5rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  padding-left:3rem;
+  padding-right:3rem;
+  border-radius:15px;
+  color:#fff;
+  background-color:#4964d0
+}
+
+.slider-product{
+  border-width:1px;
+  border-color:#4964d0;
+  border-radius:20px
+}
+
+/*# sourceMappingURL=product.css.map*/

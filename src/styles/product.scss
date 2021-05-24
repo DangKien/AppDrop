@@ -1,7 +1,17 @@
+/** @format */
+
 .drop-product {
   .border-product {
     @apply border-b pb-6;
-    border-color: #DEDEDE
+    border-color: #dedede;
+  }
+
+  .product {
+    @apply border-b pb-16;
+    .sale {
+      @apply p-2 absolute top-2 right-2 z-10;
+      background-color: #4964d0;
+    }
   }
 
   .quality {
@@ -9,31 +19,56 @@
       @apply focus:outline-none;
 
       &.icon-action {
-        border-color: #2D3855;
-        color: #2D3855
+        border-color: #2d3855;
+        color: #2d3855;
       }
     }
 
     input {
       @apply text-white;
-      background-color: #4964D0;
+      background-color: #4964d0;
       width: 58px;
+    }
 
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
     }
   }
 }
 
 .optional {
-  @apply border;
-  color: #4964D0;
-  border-color: #4964D0;
-  border-radius: 10px;
+  @apply border px-3 py-4;
+  color: #4964d0;
+  border-color: #4964d0;
+  border-radius: 15px;
+
+  &.optional-checked {
+    color: #fff;
+    background-color: #4964d0;
+  }
 
   label {
-    @apply px-3;
+    @apply px-3 py-4;
   }
 
   input {
-    @apply opacity-0;
+    @apply hidden;
   }
+}
+
+.add-to-cart {
+  @apply px-12 py-4 mt-6;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #4964d0;
+}
+.slider-product {
+  @apply border;
+  border-color: #4964d0;
+  border-radius: 20px;
 }

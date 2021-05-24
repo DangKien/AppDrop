@@ -46,6 +46,10 @@ body{
   font-size:26px
 }
 
+.font-32{
+  font-size:32px
+}
+
 .content{
   overflow:hidden
 }
@@ -56,6 +60,10 @@ body{
 
 .notification .active #number{
   display:block
+}
+
+.text-description{
+  color:#808798
 }
 .header h1.title{
   font-weight:700;

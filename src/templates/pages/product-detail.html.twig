@@ -147,8 +147,24 @@
         </div>
 
         <div class="drop-product">
-          <div class="flex">
-            <div class="w-1/2"></div>
+          <div class="product flex border-product space-x-10 pb-10">
+            <div class="w-1/2 product-image relative">
+              <div class="slider-product swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img  src="../../../src/images/ao.png" class="img-fluid w-full" >
+                  </div>
+                  <div class="swiper-slide">
+                   <img  src="../../../src/images/ao.png" class="img-fluid w-full" >
+                  </div>
+                  <div class="swiper-slide">
+                   <img  src="../../../src/images/ao.png" class="img-fluid w-full" >
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="sale rounded-10"> <span class=" font-16 font-lato text-white">15%</span></div>
+            </div>
             <div class="w-1/2 font-lato">
               <div class="border-product">
                 <h2 class="product-name font-bold font-32">Solidus T-Shirt</h2>
@@ -160,10 +176,10 @@
                 <p class="text-description font-16">Price</p>
                 <p class="font-32">$19.99</p>
               </div>
-              <div class="flex mt-6">
+              <div class="border-product flex mt-6 space-x-4">
                 <div class="quality">
                   <label class="text-description font-16">Quality</label>
-                  <div class="m-4 flex space-x-3">
+                  <div class="my-4 flex space-x-3">
                     <button class="icon-action minus border p-4 rounded-10">
                       <svg
                         viewBox="0 0 24 24"
@@ -202,24 +218,24 @@
                   </div>
                 </div>
                 <div class="size">
-                  <label class="text-description font-16" for="">Size</label>
-                  <div class="flex flex-wrap">
-                    <div class="optional">
+                  <label class="text-description font-16">Size</label>
+                  <div class="my-4 space-x-2 flex flex-wrap">
+                    <div class="optional optional-checked">
                       <label for="radio"
                         >XXS <input type="radio" name="radio"
                       /></label>
                     </div>
-                    <div>
+                    <div class="optional">
                       <label for="radio"
                         >XS <input type="radio" name="radio"
                       /></label>
                     </div>
-                    <div>
+                    <div class="optional">
                       <label for="radio"
                         >S <input type="radio" name="radio"
                       /></label>
                     </div>
-                    <div>
+                    <div class="optional">
                       <label for="radio"
                         >M <input type="radio" name="radio"
                       /></label>
@@ -227,22 +243,46 @@
                   </div>
                 </div>
               </div>
-              <div>Color:</div>
+              <div class="border-product mt-6 text-description font-16">
+                <div class="color">
+                  <label class="text-description font-16">Color: </label>
+                  <div class="flex space-x-3 mt-2">
+                    <div class="optional optional-checked">
+                      <label for="radio"
+                        >Optic White <input type="radio" name="radio"
+                      /></label>
+                    </div>
+                    <div class="optional">
+                      <label for="radio"
+                        >True Black <input type="radio" name="radio"
+                      /></label>
+                    </div>
+                    <div class="optional">
+                      <label for="radio"
+                        >Rainwashed Peri <input type="radio" name="radio"
+                      /></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <div>
-                <button>Add to cart</button>
+                <button class="add-to-cart">Add to cart</button>
               </div>
             </div>
           </div>
-          <div>
-            <div class="meta-description font-lato font-20 text-gray-500 mt-6">
-              Necessitatibus optio quod ullam itaque quis corporis occaecati.
-              Saepe harum voluptates consectetur rerum dolorum. Corrupti
-              officiis reprehenderit quo excepturi cumque. Soluta eos
-              perspiciatis aut et ea nulla amet dolores. Dolores distinctio
-              nesciunt libero voluptas molestiae consequatur aut veritatis.
+          <div class="border-product flex my-10 space-x-4">
+            <div class="lg:w-1/2 meta-description">
+              <p class="font-lato font-24 font-bold">Discription</p>
+              <div class="font-lato font-16 text-gray-500 mt-6">
+                  Necessitatibus optio quod ullam itaque quis corporis occaecati.
+                  Saepe harum voluptates consectetur rerum dolorum. Corrupti
+                  officiis reprehenderit quo excepturi cumque. Soluta eos
+                  perspiciatis aut et ea nulla amet dolores. Dolores distinctio
+                  nesciunt libero voluptas molestiae consequatur aut veritatis.
+              </div>
             </div>
-            <div class="property">
+            <div class="lg:w-1/2 property">
               <p class="font-lato font-24 font-bold">Property types</p>
               <ul
                 class="
